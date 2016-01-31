@@ -17,6 +17,8 @@ module.exports = function(express) {
 		res.json({user: {id: req.params.id}});
 	});
 
+	//test
+
 	return router;
 
 }
