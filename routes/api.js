@@ -1,8 +1,6 @@
 module.exports = function(express) {
 	var router = express.Router();
 
-	console.log('file working');
-
 	router.get('/', function(req, res) {
 		res.json({hello: "world"});
 	});
