@@ -4,19 +4,19 @@ var app = express();
 
 var port = 3000;
 
-router.get('/', function(req, res) {
+app.get('/', function(req, res) {
 	res.json({hello: "world"});
 });
 
-router.get('/v1', function(req, res) {
+app.get('/v1', function(req, res) {
 	res.json({hello: "world"});
 });
 
-router.get('/status', function(req, res) {
+app.get('/status', function(req, res) {
 	res.json({healthy: true});
 });
 
-router.get('/user/:id', function(req, res) {
+app.get('/user/:id', function(req, res) {
 	res.json({user: {id: req.params.id}});
 });
 
