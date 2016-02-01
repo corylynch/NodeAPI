@@ -4,9 +4,9 @@ var app = express();
 
 var port = 3000;
 
-// app.get('/', function(req, res){
-// 	res.json({hello:"world"});
-// });
+app.get('/', function(req, res){
+	res.json({hello:"world"});
+});
 
 app.use('/api', require('../routes/api.js')(express));
  
