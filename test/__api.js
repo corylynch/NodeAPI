@@ -39,8 +39,9 @@ describe('API', function(){
 
 	});
 
+	//testing 
 	it('/user/id returning user object with id', function testHealth(done) {
-		var fakeUserId = 347;
+		var fakeUserId = 76;
 		request(server)
 			.get('/api/user/' + fakeUserId)
 			.set('Accept', 'application/json')
